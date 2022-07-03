@@ -1,0 +1,18 @@
+//默认设置里的
+{
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
+	//"font_face": "微软雅黑",
+	"font_size": 13,
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"theme": "Adaptive.sublime-theme",
+	"word_wrap": "true",
+	"highlight_line": true,
+	"default_dir": "C:\\Users\\mingy\\Desktop"	
+	//from : https://sublime-text-unofficial-documentation.readthedocs.io/en/latest/reference/settings.html#file-and-directory-settings
+
+//<key>lineHighlight</key>
+//<string>#hexcolor</string>
+}
