@@ -1,6 +1,11 @@
 {
-	"font_size": 16,
+	"font_size": 19,
 	"theme": "Adaptive.sublime-theme",
 	"word_wrap":true,
 	"auto_complete": false,
+	"default_dir": "C://Users//mingy//Desktop", 
+	//"default_extension": "txt"
+	//注:此选项应按照如下顺序进行，而不能添加到当前文件。
+	//右下角设定语言为纯文本，然后 `preferences -> settings - syntax specific` 添加 "default_extension": "txt"
+	//因为 `默认文件类型基于应用于缓冲区的语法（显示在状态栏的右下角）`,如果设置在这里会导致所有类型的文件保存时都变成txt。
 }
