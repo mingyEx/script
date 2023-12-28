@@ -1,0 +1,11 @@
+[
+  {
+    "keys": ["control+alt+,"], "command": "align_tab",
+    "args" : {
+      "user_input" : ",/f"
+    }
+  }
+]
+//作用: 以逗号来对齐文本，方便debug时快速查看index.
+//安装插件: ctrl+shift+p ,输入install Package AlignTab 
+//配置： 首选项-->按键绑定-->用户 中添加上述内容
