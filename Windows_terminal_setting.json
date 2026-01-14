@@ -86,7 +86,8 @@
                 "cursorShape": "bar",
                 "font": 
                 {
-                    "face": "BitstromWera Nerd Font",
+                    "face": "BitstromWera Nerd Font", // download here:https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/BitstreamVeraSansMono/Regular
+                          "face": "JetBrains Mono",// 二选一即可
                     "size": 13.0
                 },
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
