@@ -63,3 +63,10 @@ function OpenCurrentFolder {
 }
 Set-Alias -Name open -Value OpenCurrentFolder
 #-------------------------------    Set Alias END     -------------------------------
+$env:EDITOR = "code --wait"
+$env:VISUAL = "code --wait"
+$env:EDITOR = '"C:\Program Files\Sublime Text\subl.exe" -w'
+$env:VISUAL = '"C:\Program Files\Sublime Text\subl.exe" -w'
+function codexx {
+    codex -a never -s danger-full-access
+}
