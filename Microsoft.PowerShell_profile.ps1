@@ -5,8 +5,7 @@ Import-Module posh-git
 # 引入 oh-my-posh
 # Import-Module oh-my-posh
 # 换成了如下
-oh-my-posh init pwsh | Invoke-Expression
-oh-my-posh init pwsh --config 'C:\Users\mingy\AppData\Local\Programs\oh-my-posh\themes\powerlevel10k_classic.omp.json' | Invoke-Expression
+oh-my-posh init pwsh --config "$HOME\.poshthemes\powerlevel10k_classic.omp.json" | Invoke-Expression
 # 引入 ps-read-line
 Import-Module PSReadLine
 
@@ -63,10 +62,20 @@ function OpenCurrentFolder {
 }
 Set-Alias -Name open -Value OpenCurrentFolder
 #-------------------------------    Set Alias END     -------------------------------
-$env:EDITOR = "code --wait"
-$env:VISUAL = "code --wait"
-$env:EDITOR = '"C:\Program Files\Sublime Text\subl.exe" -w'
-$env:VISUAL = '"C:\Program Files\Sublime Text\subl.exe" -w'
+
+#############分割线，下面的是对比##########
+
+$env:EDITOR = "pwsh -NoProfile -ExecutionPolicy Bypass -File `"$HOME\Scripts\codex-editor-wrapper.ps1`""
+$env:VISUAL = $env:EDITOR
+
 function codexx {
+    $env:CODEX_BUFFER_DIR = (Get-Location).Path
+
+    if (!(Test-Path "input_buffer.md")) {
+        New-Item -ItemType File "input_buffer.md" | Out-Null
+    }
+
+    typora input_buffer.md
+
     codex -a never -s danger-full-access
 }
