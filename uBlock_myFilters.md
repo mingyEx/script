@@ -13,3 +13,6 @@ youtube.com##ytd-shelf-renderer:has-text(/Channels new to you/)
 youtube.com##ytd-shelf-renderer:has-text(/Previously watched/)
 ```
 from [reddit](https://www.reddit.com/r/youtube/comments/k76ext/comment/gyins89/?context=3)
+
+www.zhihu.com##svg.ZDI--FourPointedStar16
+//去除zhihu的文字右上角小星星
